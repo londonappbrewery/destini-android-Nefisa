@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                     topButton.setVisibility(View.GONE);
                     bottomButton.setVisibility(View.GONE);
 
-                } else if (top == 2 && bottom == 3){
+                } else if (top == 2 && bottom == 3 || top == 2 && bottom == 2 ){
                     story.setText(R.string.T5_End);
                     topButton.setVisibility(View.GONE);
                     bottomButton.setVisibility(View.GONE);
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-        
+
         onCreate(null);
     }
 }
